@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "bootstrap-5.2.0-beta1-dist/css/bootstrap.css"/>
+    <link rel = "stylesheet" href = "styles.css"/>
+</head>
+
+<body>
+
+    <div class = "container" id = "inputContainer">
+
+            <div class = "navbar w-100">
+                <img src = "resources/afLogo.png" style = "height:50px;">
+
+                <a class = "btn btn-outline-light d-none d-md-block float-right">Get Started</a>
+
+            </div>
+            <div id = "inputBox" style = "text-align:center;">
+                <h1>Discover Funding Resources For Your Situation</h1>
+                <p>Sign up now to take advantage of FREE financial opportunities.</p>
+
+                <form>
+                        <input required type = "text" name = "name" placeholder = "Name" title = "Input must be first and last name with one space inbetween. Only letters are allowed" 
+                            class = "form-control invalid" pattern = "^[a-zA-Z]{2,}\s[a-zA-Z]{2,}$">
+
+                        <input required type = "email" name = "email" placeholder = "E-mail" title = "Input must contain an @ and a .com" class = "form-control invalid" 
+                        pattern = "(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}">
+
+                        <input required type = "text" name = "zipcode" placeholder = "Zip Code" title = "Input must be a 5 digit zip code. Only numbers are allowed" class = "form-control invalid"  
+                        pattern = "^[0-9]{5}" oninput= "javascript: if(this.value.length > 5) this.value = this.value.slice(0,5);" >
+
+                   
+                    <p style = "font-size:12px; background-color:rgba(0,0,0,0.5); text-align:center;">By clicking “Get Help Now“ you are agreeing to the 
+                        <a href = "https://signup.assistanceforward.com/lp#/terms/6259971d0a8300ea68b4d87c" target = "_blank">Terms & Conditions</a> and 
+                        <a href = "https://signup.assistanceforward.com/lp#/privacy/6259971d0a8300ea68b4d87c" target = "_blank">Privacy Policy</a>.</p>
+
+                    <div class = "d-grid gap-2 col-7 mx-auto">
+                        <button type = "submit" class = "btn btn-outline-light" >Get Help Now</button>
+                    </div>
+                </form>
+            </div>
+            
+            <video autoplay muted loop src = "resources/backgroundFamilyAnimation.mp4"></video>
+    </div>
+
+    <div class = "container" id = "images" style = "font-size:x-large;">
+        <div class = "row justify-content-center">
+            <div class = "col-4" style = "text-align:center; margin-top:30px;">
+                <h1>How It Works</h1>
+            </div>
+        </div>
+
+        <div class = "row justify-content-around" style = "margin-bottom:100px;">
+
+            <div class = "col-sm-5 col-11">
+                <h2 style = "color:#5dc6bc; z-index:-1;">1___</h2>
+                <div class = "slides animated fadeInLeft" style = "animation-delay:1s;">
+                    <h3>Sign Up</h3> 
+                    <p>Get started by signing up with your email for free. In seconds, you’ll have access to thousands of help opportunities.</p>
+                </div>
+                <a href = "#inputBox" class = "prettyLink d-none d-sm-block">Access Resources →</a>
+            </div>
+            <div class = "col-sm-5" >
+                <img class = "img" src = "resources/mail.svg" style = "max-width:100%;">
+            </div>
+        </div> 
+
+        <div class = "row justify-content-around" style = "margin-bottom:100px;">
+
+            <div class = "col-sm-5" >
+                <img class = "img" src = "resources/phone.svg" style = "max-width:100%;">
+            </div>
+            <div class = "col-sm-5 col-11" id = "image2">
+                <h2 style = "color:#5dc6bc; z-index:-1;">2___</h2>
+
+                <div class = "slides animated fadeInLeft" style = "animation-delay:3s;">
+                    <h3>Answer A Few Quick Questions</h3> 
+                    <p>Tell us about your situation, so we can provide you with resources that can benefit you and your family.</p>
+                </div>
+                <a href = "#inputBox" class = "prettyLink d-none d-sm-block">Get Started →</a>
+            </div>
+            
+        </div>
+
+        <div class = "row justify-content-around" style = "margin-bottom:100px;">
+
+            <div class = "col-sm-5 col-11">
+                <h2 style = "color:#5dc6bc; z-index:-1;">3___</h2>
+
+                <div class = "slides animated fadeInLeft" style = "animation-delay:5s;">
+
+                    <h3>Get Connected To Financial Solutions</h3> 
+                    <p>Based on the information you provide we will do our best to match you with programs that meet your needs.</p>
+                </div>
+                <a id = "signUp" class = "btn btn-light d-none d-sm-block" style = "background:white; outline:0px;"href = "#inputBox">Sign Up →</a>
+            </div>
+
+            <div class = "col-sm-5" >
+                <img class = "img" src = "resources/woman.svg" style = "max-width:100%;">
+            </div>
+            
+        </div> 
+            
+        <div class = "row d-sm-none d-block" >
+            <div class = "d-grid gap-2 col-6 mx-auto m-5">
+            <a href = "#inputBox" class = "btn btn-outline-light">Get Started</a>
+        </div>
+        </div>
+    </div>
+
+    <div class = "container" id = "carouselText">
+        <div class = "row">
+            <div class = "col" style = "text-align:center; margin-bottom:50px;">
+                <h2>What Resources Do You Need?</h3>
+                <h5>Learn about the tools and programs that can help you achieve your goals. Find out what options are available to you.</h5>
+            </div>
+        </div>
+        <div id = "backupCarousel" style = "padding-bottom:50px;">
+        <div class = "row">
+            <div class = "col-6">
+                <div class = "card">
+                    <img src = "resources/grants.svg">
+                    <p class = "card-text">Grants</p>
+                </div>
+            </div>
+
+            <div class = "col-6">
+                <div class = "card">
+                    <img src = "resources/housing.svg">
+                    <p class = "card-text">Housing</p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-6">
+                <div class = "card">
+                    <img src = "resources/education.svg">
+                    <p class = "card-text">Education</p>
+                </div>
+            </div>
+
+            <div class = "col-6">
+                <div class = "card">
+                    <img src = "resources/singleParent.svg">
+                    <p class = "card-text">Single Parent Help</p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-6">
+                <div class = "card">
+                    <img src = "resources/disability.svg">
+                    <p class = "card-text">Disability Benefits</p>
+                </div>
+            </div>
+
+            <div class = "col-6">
+                <div class = "card">
+                    <img class = "img-fluid animated fadeIn" src = "resources/finance.svg">
+                    Financial Resources
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+    </div>
+    
+    <div class = "container" id = "carouselContainer">
+        <div id="carousel" class="carousel slide carousel-multi-item" data-bs-ride="false">
+  
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class = "row justify-content-around">
+                    <div class = "col-md-3">
+                        <div class = "card">
+                            <img class = "card-img-top" src="resources/grants.svg" >
+
+                            <div class="card-body">
+                                <p class = "card-text">Grants</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class = "col-md-3">
+                        <div class = "card">
+                            <img class = "card-img-top" src ="resources/housing.svg">
+                            <div class = "card-body">
+                                Housing
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-md-3">
+                        <div class = "card">
+                            <img src = "resources/education.svg">
+                            <div class = "card-body">
+                                Education
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                </div>      
+
+                <div class="carousel-item">
+                    <div class = "row justify-content-around">
+                    <div class = "col-md-3">
+                        <div class = "card">
+                            <img class = "card-img-top" src="resources/singleParent.svg" >
+
+                            <div class="card-body">
+                                <p class = "card-text">Single Parent Help</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class = "col-md-3">
+                        <div class = "card">
+                            <img class = "card-img-top" src ="resources/disability.svg">
+                            <div class = "card-body">
+                                Disability Benefits
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-md-3">
+                        <div class = "card">
+                            <img src = "resources/finance.svg">
+                            <div class = "card-body">
+                                Financial Resources
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                </div> 
+            </div>
+
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" ></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+              </div>
+
+
+            </div>
+        
+
+    </div>
+
+    <div class = "container-fluid d-flex flex-column fs-3" id = "bottomContainer">
+        <div class = "row">
+            <div class = "col-sm-6 align-self-center justify-content-center">
+                <p>Get Connected To The Help You Need Today</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href = "#inputBox" class = "fs-4 btn btn-light d-none d-sm-inline">Sign Up</a>
+                    <a href = "#inputBox" class = "btn btn-outline-light d-inline d-sm-none">Sign Up</a>  
+                </div>              
+            </div>
+
+            <div class = "col-12 col-sm-6" style = "z-index:-1;">
+                <img class = "img img-fluid" src = "resources/user.png" style = "width:100%;">
+            </div>
+        </div>
+    </div>
+
+    <div class = "container" id = "disclaimerContainer">
+        <div class = "row justify-content-center" style = "display:inline;">
+            
+            <div class = "col-sm-11 col-lg-10">
+                <div id = "disclaimer">
+                <p>Disclaimer</p>
+                <div class = "d-inline">AssistanceForward is a privately held for-profit entity and has no affiliation or relationship with the United States Government or U.S. Department of Education. 
+                    AssistanceForward offers links to other third-party websites and services as helpful resources to locate internet content that may be of interest to you. We
+
+                    <span class = "collapse" id = "readMore"> may receive an affiliate commission for referrals by you using such links. We pay our operating costs through our 
+                        advertising revenue by having third-party affiliate offers. AssistanceForward advises that you not pay for any third party service that is provided to third 
+                        parties websites and/or services through AssistanceForward are managed by such third parties. 
+                        For more information on government education grants, visit https://studentaid.ed.gov/sa/types/grants-scholarships/pell</span></div>
+                </div>
+            
+                            <a href="#readMore" id = "rmButton" data-bs-toggle="collapse" aria-expanded="false" aria-controls="readMore">
+                                <span class="collapsed">
+                                  Show more
+                                </span>
+                                <span class="expanded">
+                                  Show Less
+                                </span>
+                              </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class = "container text-center" style = "max-width:none;background:rgb(4, 28, 84);padding:50px;">
+        <div class = "row">
+            <div class = "col-sm-6 col-12 justify-content-center" style = "padding-left:15%;">
+                <img src = "resources/afLogo.png" style = "height:50px; margin-bottom:15px;">
+            </div>
+            <div class = "col-sm-6 col-12">
+                <div id = "bottomLinks" class = "row gy-3">
+                    <div class = "col-sm-6 col-12"><a target = "_blank" href = "https://signup.assistanceforward.com/lp#/terms/6259971d0a8300ea68b4d87c">Terms & Conditions</a></div>
+                    <div class = "col-sm-6 col-12"><a target = "_blank" href = "https://myresourceslp.resourcesify.com/lp#/contact/2">Contact Us</a></div>
+                    <div class = "col-sm-6 col-12"><a target = "_blank" href = "https://signup.assistanceforward.com/lp#/privacy/6259971d0a8300ea68b4d87c">Privacy Policy</a></div>
+                    <div class = "col-sm-6 col-12"><a target = "_blank" href = "https://myresources-oz.resourcesify.com/unsubscribe/">Unsubscribe</a></div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class = "container" id = "copyRight">
+        <div class = "row">
+            <div class = "col-12">
+                Copyright @ 2022. All rights reserved.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
