@@ -1,4 +1,4 @@
-# copyWebsite
+# AssistanceForward copy
 
 This website was created in order to improve my css and html skills as well as my familiarity with the bootstrap library. It is a fully responsive webpage that works on all screen widths and heights, and has a few css animations as well as formatting to make it look clean. It has both a mobile and desktop version
 
